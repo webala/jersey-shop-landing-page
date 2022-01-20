@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+.light {
+    --text-color: #f28605;
+    --color-button: black;
+    --background-color: white;
+    --backckground-button: #a8abad;
+    --link-hover-color: #1377c2;
+    --link-color: #f28605;
+    --footer-text: black;
+}
+
+.dark {
+    --text-color: white;
+    --color-button: black;
+    --background-color: #26323b;
+    --backckground-button: #a8abad;
+    --link-hover-color: white;
+    --link-color: #f28605;
+}
+
+
+
+header {
+    display: flex;
+    position: relative;
+}
+header .logo {
+    display: flex;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Inconsolata', monospace;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+.logo img {
+    height: 70px;
+    border-radius: 50%;
+    margin: 20px
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+li {
+    margin: 1.5rem;
+}
+.links {
+    display: flex;
+    position: absolute;
+    right: 50px;
+}
+
+.showcase-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.left {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 40px;
+}
+
+
+.btn {
+    width: 100px;
+    height: 25px;
+    align-self: center;
+    border: none;
+    border-radius: 16px;
+    transition: 0.3s;
+    background-color: var(--backckground-button);
+    color: var(--color-button);
+}
+
+.btn:hover {
+    background-color: #f28605;
+    transform: scale(1.1);
+}
+
+.right {
+    justify-content: center;
+    align-items: center;
+}
+.right img {
+    width: 90%;
+    height: 90%;
+    border-radius: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+ a {
+    display: inline-block;
+    transition: 0.3;
+}
+
+.links a:hover {
+    transform: scale(1.3);
+    color: var(--link-hover-color);
+}
+
+.footer a:hover {
+    transform: scale(1.3);
+    color: var(--link-hover-color);
+}
+
+.footer p, .footer i {
+    color: var(--footer-text)
+}
